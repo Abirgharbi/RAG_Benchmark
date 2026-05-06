@@ -1,0 +1,32 @@
+{
+  "full_document": {
+    "n_chunks": 295,
+    "avg_words": 457.5,
+    "min_words": 31,
+    "max_words": 7304
+  },
+  "paragraph": {
+    "n_chunks": 5556,
+    "avg_words": 34.4,
+    "min_words": 4,
+    "max_words": 3304
+  },
+  "sliding_window": {
+    "n_chunks": 653,
+    "avg_words": 239.8,
+    "min_words": 30,
+    "max_words": 328
+  },
+  "section": {
+    "n_chunks": 2767,
+    "avg_words": 52.5,
+    "min_words": 6,
+    "max_words": 1399
+  },
+  "parent_child": {
+    "n_chunks": 4370,
+    "avg_words": 55.7,
+    "min_words": 19,
+    "max_words": 3304
+  }
+}

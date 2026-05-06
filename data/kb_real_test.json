@@ -1,0 +1,51 @@
+[
+  {
+    "id": "stm32cubeh7-issue-343",
+    "source_kind": "issue",
+    "title": "[H7] #343: [Bug]: HAL_CRYP_Decrypt_DMA fails when transfer size is > 65535 bytes",
+    "content": "Issue #343: [Bug]: HAL_CRYP_Decrypt_DMA fails when transfer size is > 65535 bytes\n\nTitle: [Bug]: HAL_CRYP_Decrypt_DMA fails when transfer size is > 65535 bytes\n\nBody:\n### Bug Summary\n\nHAL_CRYP_Decrypt_DMA fails when transfer size is > 65535 bytes\n\n### Detailed Description\n\nWith CRYP set up with word-sized transfers (CRYP_DATAWIDTHUNIT_WORD), it should be able to process 65535 words, or up to 262140 bytes. Internal to HAL, the Size field is set to the number of bytes in the operation, not the number of words, which causes an overflow in the uint16_t value.\n\nThe comments say that Size is the number of bytes or the number of words, depending on DataWidthUnit. However, the code sets it to the number of bytes regardless of the DataWidthUnit setting.\n\n### Expected Behavior\n\nHAL_CRYP_Decrypt_DMA functions correctly for operations on <= 65535 words when set to CRYP_DATAWIDTHUNIT_WORD\n\n### Actual Behavior\n\nThe transfer size is truncated due to the number of bytes being stored as a uint16_t\n\n### Severity\n\nNormal\n\nComments:\n[MKISTM - 2026-04-14T10:51:10Z]\nHello @timkostka, Thank you for your report, it seems that point makes sense and will be tracked internally.\n\n[MKISTM - 2026-04-14T10:51:41Z]\nST Internal Reference: CDM0061687",
+    "paragraphs": [
+      "Issue #343: [Bug]: HAL_CRYP_Decrypt_DMA fails when transfer size is > 65535 bytes",
+      "Title: [Bug]: HAL_CRYP_Decrypt_DMA fails when transfer size is > 65535 bytes",
+      "HAL_CRYP_Decrypt_DMA fails when transfer size is > 65535 bytes",
+      "With CRYP set up with word-sized transfers (CRYP_DATAWIDTHUNIT_WORD), it should be able to process 65535 words, or up to 262140 bytes. Internal to HAL, the Size field is set to the number of bytes in the operation, not the number of words, which causes an overflow in the uint16_t value.",
+      "The comments say that Size is the number of bytes or the number of words, depending on DataWidthUnit. However, the code sets it to the number of bytes regardless of the DataWidthUnit setting.",
+      "HAL_CRYP_Decrypt_DMA functions correctly for operations on <= 65535 words when set to CRYP_DATAWIDTHUNIT_WORD",
+      "The transfer size is truncated due to the number of bytes being stored as a uint16_t",
+      "Comments:\n[MKISTM - 2026-04-14T10:51:10Z]\nHello @timkostka, Thank you for your report, it seems that point makes sense and will be tracked internally.",
+      "[MKISTM - 2026-04-14T10:51:41Z]\nST Internal Reference: CDM0061687"
+    ],
+    "issue_number": 343,
+    "issue_title": "[Bug]: HAL_CRYP_Decrypt_DMA fails when transfer size is > 65535 bytes",
+    "issue_kind": "bug_report",
+    "state": "open",
+    "labels": [
+      "bug",
+      "internal bug tracker",
+      "hal",
+      "cryp"
+    ],
+    "is_confirmed_bug": true,
+    "layer": "HAL",
+    "severity": "medium",
+    "created_at": "2026-04-11T17:26:39Z",
+    "mcu_series": "H7",
+    "mcu_package": "STM32CubeH7",
+    "repo": "STM32CubeH7",
+    "component": "DMA",
+    "board": "STM32H7XX",
+    "github_url": "https://github.com/STMicroelectronics/STM32CubeH7/issues/343",
+    "peripheral": "DMA",
+    "mcu_family": "H7",
+    "topic": "bug_report",
+    "metadata": {
+      "source": "STM32CubeH7",
+      "doc_type": "issue",
+      "layer": "HAL",
+      "severity": "medium",
+      "labels": "bug,internal bug tracker,hal,cryp",
+      "word_count": 189,
+      "ingest_version": "v2.0"
+    }
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "strategy": "full_document",
+    "p@1": 0.65,
+    "p@3": 0.5833,
+    "p@5": 0.55,
+    "mrr": 0.7042,
+    "latency_ms": 20.63,
+    "index_time_s": 0.66
+  },
+  {
+    "strategy": "paragraph",
+    "p@1": 0.65,
+    "p@3": 0.5833,
+    "p@5": 0.57,
+    "mrr": 0.65,
+    "latency_ms": 25.1285,
+    "index_time_s": 13.54
+  },
+  {
+    "strategy": "sliding_window",
+    "p@1": 0.7,
+    "p@3": 0.6,
+    "p@5": 0.57,
+    "mrr": 0.7267,
+    "latency_ms": 22.4735,
+    "index_time_s": 1.77
+  },
+  {
+    "strategy": "section",
+    "p@1": 0.7,
+    "p@3": 0.6,
+    "p@5": 0.58,
+    "mrr": 0.7,
+    "latency_ms": 25.928,
+    "index_time_s": 3.03
+  },
+  {
+    "strategy": "parent_child",
+    "p@1": 0.65,
+    "p@3": 0.6333,
+    "p@5": 0.58,
+    "mrr": 0.6667,
+    "latency_ms": 28.3325,
+    "index_time_s": 2.32
+  }
+]

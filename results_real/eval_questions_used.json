@@ -1,0 +1,122 @@
+[
+  {
+    "id": "rq01",
+    "question": "HAL_CRYP_Decrypt_DMA fails for large buffers over 65535 bytes",
+    "relevant_topic": "issue",
+    "relevant_periph": "CRYP"
+  },
+  {
+    "id": "rq02",
+    "question": "DMA transfer size overflow uint16_t HAL bug",
+    "relevant_topic": "issue",
+    "relevant_periph": "DMA"
+  },
+  {
+    "id": "rq03",
+    "question": "CRYP encryption decryption word size DataWidthUnit issue",
+    "relevant_topic": "issue",
+    "relevant_periph": "CRYP"
+  },
+  {
+    "id": "rq04",
+    "question": "How to configure USB device on STM32H7?",
+    "relevant_topic": "example",
+    "relevant_periph": "USB"
+  },
+  {
+    "id": "rq05",
+    "question": "FreeRTOS task configuration STM32H7",
+    "relevant_topic": "example",
+    "relevant_periph": "FreeRTOS"
+  },
+  {
+    "id": "rq06",
+    "question": "ETH Ethernet LwIP STM32H7 configuration",
+    "relevant_topic": "example",
+    "relevant_periph": "ETH"
+  },
+  {
+    "id": "rq07",
+    "question": "SDMMC SD card initialization STM32H7 HAL",
+    "relevant_topic": "example",
+    "relevant_periph": "SDMMC"
+  },
+  {
+    "id": "rq08",
+    "question": "UART DMA transmit receive STM32H7",
+    "relevant_topic": "example",
+    "relevant_periph": "UART"
+  },
+  {
+    "id": "rq09",
+    "question": "STM32H743I-EVAL BSP initialization LCD LTDC",
+    "relevant_topic": "file",
+    "relevant_periph": "LTDC"
+  },
+  {
+    "id": "rq10",
+    "question": "NUCLEO-H7 board support package GPIO configuration",
+    "relevant_topic": "file",
+    "relevant_periph": "GPIO"
+  },
+  {
+    "id": "rq11",
+    "question": "mbedTLS TLS configuration STM32H7",
+    "relevant_topic": "example",
+    "relevant_periph": "mbedTLS"
+  },
+  {
+    "id": "rq12",
+    "question": "AES encryption hardware accelerator STM32H7",
+    "relevant_topic": "example",
+    "relevant_periph": "CRYP"
+  },
+  {
+    "id": "rq13",
+    "question": "FatFs filesystem SD card STM32H7",
+    "relevant_topic": "example",
+    "relevant_periph": "FatFs"
+  },
+  {
+    "id": "rq14",
+    "question": "LibJPEG JPEG decoding STM32H7 DMA2D",
+    "relevant_topic": "example",
+    "relevant_periph": "JPEG"
+  },
+  {
+    "id": "rq15",
+    "question": "HAL_Init SystemClock_Config startup sequence STM32H7",
+    "relevant_topic": "example",
+    "relevant_periph": "RCC"
+  },
+  {
+    "id": "rq16",
+    "question": "ADC multimode DMA STM32H7xx HAL driver",
+    "relevant_topic": "file",
+    "relevant_periph": "ADC"
+  },
+  {
+    "id": "rq17",
+    "question": "SPI full duplex master DMA STM32H7",
+    "relevant_topic": "example",
+    "relevant_periph": "SPI"
+  },
+  {
+    "id": "rq18",
+    "question": "TIM PWM output configuration STM32H7",
+    "relevant_topic": "example",
+    "relevant_periph": "TIM"
+  },
+  {
+    "id": "rq19",
+    "question": "IWDG WWDG watchdog configuration STM32H7",
+    "relevant_topic": "example",
+    "relevant_periph": "WWDG"
+  },
+  {
+    "id": "rq20",
+    "question": "FLASH programming erase sectors STM32H7",
+    "relevant_topic": "file",
+    "relevant_periph": "FLASH"
+  }
+]
